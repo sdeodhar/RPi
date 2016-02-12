@@ -1,0 +1,25 @@
+_Read_FFT: CODE, 6916 0 206
+_Init_i2c: CODE, 7908 0 30
+_USARTinit: CODE, 7702 0 48
+_lcd_init: CODE, 5382 0 400
+_i2c_idle: CODE, 7838 0 38
+_LCD_build: CODE, 7122 0 148
+_i2c_write: CODE, 7750 0 46
+_Init_PWM: CODE, 7648 0 54
+_main: CODE, 6434 0 244
+_i2c_stop: CODE, 7938 0 22
+_Disp_Mill_fill: CODE, 7970 0 2
+___awdiv: CODE, 5782 0 346
+_Calc_percentageFull: CODE, 7968 0 2
+_isr: CODE, 6678 0 238
+_Initcustom_char: CODE, 6128 0 306
+_Init_stat_isr: CODE, 7960 0 8
+_i2c_read: CODE, 7876 0 32
+_Adc_init: CODE, 7592 0 56
+_Set_PWM_Duty: CODE, 7270 0 134
+_lcd_command: CODE, 4346 0 518
+_DelayMs: CODE, 7404 0 120
+_lcd_data: CODE, 4864 0 518
+_i2c_start: CODE, 7524 0 68
+_i2c_master_ack: CODE, 7796 0 42
+Total: 3626

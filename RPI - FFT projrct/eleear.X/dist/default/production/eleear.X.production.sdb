@@ -1,0 +1,502 @@
+[p LITE_MODE AUTOSTATIC LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F4620 ]
+"63 C:\Program Files\HI-TECH Software\PICC-18\PRO\9.65\include\pic18f4620.h
+[s S50 . 1 `Vuc 1 RBIF 1 0 :1:0 
+`Vuc 1 INT0IF 1 0 :1:1 
+`Vuc 1 TMR0IF 1 0 :1:2 
+`uc 1 RBIE 1 0 :1:3 
+`uc 1 INT0IE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+[s S59 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 GIEL 1 0 :1:6 
+`uc 1 GIEH 1 0 :1:7 
+]
+[u S63 . 1 `S50 1 . 1 0 `S59 1 . 1 0 ]
+"106 main.c
+[v F1809 `(v  1 t 0 ]
+"341 C:\Program Files\HI-TECH Software\PICC-18\PRO\9.65\include\pic18f4620.h
+[s S354 . 1 `Vuc 1 RX9D 1 0 :1:0 
+`Vuc 1 OERR 1 0 :1:1 
+`Vuc 1 FERR 1 0 :1:2 
+`uc 1 ADDEN 1 0 :1:3 
+`uc 1 CREN 1 0 :1:4 
+`uc 1 SREN 1 0 :1:5 
+`Vuc 1 RX9 1 0 :1:6 
+`uc 1 SPEN 1 0 :1:7 
+]
+[u S363 . 1 `S354 1 . 1 0 ]
+"4 Adc.c
+[v _Adc_init `(v  1 e 0 0 ]
+"5 C:\Program Files\HI-TECH Software\PICC-18\PRO\9.65\sources\awdiv.c
+[v ___awdiv `(i  1 e 2 0 ]
+"17 i2c.c
+[v _i2c_idle `(v  1 e 0 0 ]
+"22
+[v _i2c_start `(v  1 e 0 0 ]
+"37
+[v _i2c_stop `(v  1 e 0 0 ]
+"50
+[v _i2c_write `(v  1 e 0 0 ]
+"59
+[v _i2c_master_ack `(v  1 e 0 0 ]
+"66
+[v _i2c_read `(uc  1 e 1 0 ]
+"74
+[v _Read_FFT `(uc  1 e 1 0 ]
+"100
+[v _Init_i2c `(v  1 e 0 0 ]
+"11 lcd.c
+[v _DelayMs `(v  1 e 0 0 ]
+"63
+[v _lcd_command `(v  1 e 0 0 ]
+"85
+[v _lcd_data `(v  1 e 0 0 ]
+"141
+[v _lcd_init `(v  1 e 0 0 ]
+"223
+[v _LCD_build `(v  1 e 0 0 ]
+"234
+[v _Initcustom_char `(v  1 e 0 0 ]
+"21 main.c
+[v _Init_stat_isr `(v  1 e 0 0 ]
+"39
+[v _main `(v  1 e 0 0 ]
+"106
+[v _isr `I(v  1 e 0 0 ]
+"4 Mill_Calc.c
+[v _Calc_percentageFull `(v  1 e 0 0 ]
+"9
+[v _Disp_Mill_fill `(v  1 e 0 0 ]
+"4 Pwm.c
+[v _Init_PWM `(v  1 e 0 0 ]
+"16
+[v _Set_PWM_Duty `(v  1 e 0 0 ]
+"4 Uart.c
+[v _USARTinit `(v  1 e 0 0 ]
+"47 C:\Program Files\HI-TECH Software\PICC-18\PRO\9.65\include\18f4620.h
+[v _INTCONbits `S63  1 e 1 @4082 ]
+"327
+[v _RCSTAbits `S363  1 e 1 @4011 ]
+"62 C:\Program Files\HI-TECH Software\PICC-18\PRO\9.65\include\pic18f4620.h
+[v _TMR0H `VNuc  1 e 1 @4055 ]
+"63
+[v _TMR0L `VNuc  1 e 1 @4054 ]
+"65
+[v _TMR0 `VNui  1 e 2 @4054 ]
+"66
+[v _T0CON `Nuc  1 e 1 @4053 ]
+"67
+[v _OSCCON `VNuc  1 e 1 @4051 ]
+"72
+[v _TMR1H `VNuc  1 e 1 @4047 ]
+"73
+[v _TMR1L `VNuc  1 e 1 @4046 ]
+"78
+[v _PR2 `Nuc  1 e 1 @4043 ]
+"79
+[v _T2CON `Nuc  1 e 1 @4042 ]
+"80
+[v _SSPBUF `VNuc  1 e 1 @4041 ]
+"81
+[v _SSPADD `Nuc  1 e 1 @4040 ]
+"82
+[v _SSPSTAT `VNuc  1 e 1 @4039 ]
+"83
+[v _SSPCON1 `VNuc  1 e 1 @4038 ]
+"84
+[v _SSPCON2 `VNuc  1 e 1 @4037 ]
+"85
+[v _ADRESH `VNuc  1 e 1 @4036 ]
+"86
+[v _ADRESL `VNuc  1 e 1 @4035 ]
+"89
+[v _ADCON0 `VNuc  1 e 1 @4034 ]
+"90
+[v _ADCON1 `Nuc  1 e 1 @4033 ]
+"91
+[v _ADCON2 `Nuc  1 e 1 @4032 ]
+"93
+[v _CCPR1L `VNuc  1 e 1 @4030 ]
+"96
+[v _CCP1CON `VNuc  1 e 1 @4029 ]
+"98
+[v _CCPR2L `VNuc  1 e 1 @4027 ]
+"101
+[v _CCP2CON `VNuc  1 e 1 @4026 ]
+"114
+[v _SPBRGH `Nuc  1 e 1 @4016 ]
+"115
+[v _SPBRG `Nuc  1 e 1 @4015 ]
+"116
+[v _RCREG `VNuc  1 e 1 @4014 ]
+"117
+[v _TXREG `VNuc  1 e 1 @4013 ]
+"121
+[v _EEADR `Nuc  1 e 1 @4009 ]
+"122
+[v _EEDATA `VNuc  1 e 1 @4008 ]
+"123
+[v _EECON2 `VNuc  1 e 1 @4007 ]
+"124
+[v _EECON1 `VNuc  1 e 1 @4006 ]
+"131
+[v _OSCTUNE `Nuc  1 e 1 @3995 ]
+"133
+[v _TRISE `VNuc  1 e 1 @3990 ]
+"136
+[v _TRISC `VNuc  1 e 1 @3988 ]
+"138
+[v _TRISA `VNuc  1 e 1 @3986 ]
+"161
+[v _INT0IF `VNb  1 e 0 @32657 ]
+"162
+[v _TMR0IF `VNb  1 e 0 @32658 ]
+"164
+[v _INT0IE `Nb  1 e 0 @32660 ]
+"165
+[v _TMR0IE `Nb  1 e 0 @32661 ]
+"167
+[v _GIE `Nb  1 e 0 @32663 ]
+"177
+[v _INTEDG0 `Nb  1 e 0 @32654 ]
+"242
+[v _TMR1ON `Nb  1 e 0 @32360 ]
+"261
+[v _BF `VNb  1 e 0 @32312 ]
+"263
+[v _RW `VNb  1 e 0 @32314 ]
+"276
+[v _SSPEN `Nb  1 e 0 @32309 ]
+"278
+[v _WCOL `VNb  1 e 0 @32311 ]
+"281
+[v _SEN `Nb  1 e 0 @32296 ]
+"282
+[v _RSEN `VNb  1 e 0 @32297 ]
+"283
+[v _PEN `VNb  1 e 0 @32298 ]
+"284
+[v _RCEN `VNb  1 e 0 @32299 ]
+"285
+[v _ACKEN `VNb  1 e 0 @32300 ]
+"286
+[v _ACKDT `VNb  1 e 0 @32301 ]
+"287
+[v _ACKSTAT `VNb  1 e 0 @32302 ]
+"291
+[v _ADON `Nb  1 e 0 @32272 ]
+"338
+[v _BRG16 `Nb  1 e 0 @32195 ]
+"341
+[v _TXCKP `Nb  1 e 0 @32196 ]
+"402
+[v _TRMT `VNb  1 e 0 @32097 ]
+"403
+[v _BRGH `Nb  1 e 0 @32098 ]
+"405
+[v _SYNC `Nb  1 e 0 @32100 ]
+"406
+[v _TXEN `Nb  1 e 0 @32101 ]
+"407
+[v _TX9 `Nb  1 e 0 @32102 ]
+"412
+[v _OERR `VNb  1 e 0 @32089 ]
+"417
+[v _RX9 `Nb  1 e 0 @32094 ]
+"421
+[v _RD `VNb  1 e 0 @32048 ]
+"422
+[v _WR `VNb  1 e 0 @32049 ]
+"423
+[v _WREN `Nb  1 e 0 @32050 ]
+"427
+[v _EEPGD `Nb  1 e 0 @32055 ]
+"445
+[v _EEIF `VNb  1 e 0 @32012 ]
+"475
+[v _TMR1IF `VNb  1 e 0 @31984 ]
+"478
+[v _SSPIF `VNb  1 e 0 @31987 ]
+"479
+[v _TXIF `VNb  1 e 0 @31988 ]
+"480
+[v _RCIF `VNb  1 e 0 @31989 ]
+"481
+[v _ADIF `VNb  1 e 0 @31990 ]
+"487
+[v _TMR1IE `Nb  1 e 0 @31976 ]
+"491
+[v _TXIE `Nb  1 e 0 @31980 ]
+"492
+[v _RCIE `Nb  1 e 0 @31981 ]
+"493
+[v _ADIE `Nb  1 e 0 @31982 ]
+"518
+[v _TRISD0 `VNb  1 e 0 @31912 ]
+"519
+[v _TRISD1 `VNb  1 e 0 @31913 ]
+"520
+[v _TRISD2 `VNb  1 e 0 @31914 ]
+"521
+[v _TRISD3 `VNb  1 e 0 @31915 ]
+"522
+[v _TRISD4 `VNb  1 e 0 @31916 ]
+"523
+[v _TRISD5 `VNb  1 e 0 @31917 ]
+"524
+[v _TRISD6 `VNb  1 e 0 @31918 ]
+"525
+[v _TRISD7 `VNb  1 e 0 @31919 ]
+"530
+[v _TRISC1 `VNb  1 e 0 @31905 ]
+"531
+[v _TRISC2 `VNb  1 e 0 @31906 ]
+"532
+[v _TRISC3 `VNb  1 e 0 @31907 ]
+"533
+[v _TRISC4 `VNb  1 e 0 @31908 ]
+"539
+[v _TRISB0 `VNb  1 e 0 @31896 ]
+"540
+[v _TRISB1 `VNb  1 e 0 @31897 ]
+"546
+[v _TRISB7 `VNb  1 e 0 @31903 ]
+"567
+[v _LATD1 `VNb  1 e 0 @31841 ]
+"570
+[v _LATD4 `VNb  1 e 0 @31844 ]
+"571
+[v _LATD5 `VNb  1 e 0 @31845 ]
+"572
+[v _LATD6 `VNb  1 e 0 @31846 ]
+"573
+[v _LATD7 `VNb  1 e 0 @31847 ]
+"587
+[v _LATB0 `VNb  1 e 0 @31824 ]
+"588
+[v _LATB1 `VNb  1 e 0 @31825 ]
+"598
+[v _LATA1 `VNb  1 e 0 @31817 ]
+"599
+[v _LATA2 `VNb  1 e 0 @31818 ]
+"600
+[v _LATA3 `VNb  1 e 0 @31819 ]
+"601
+[v _LATA4 `VNb  1 e 0 @31820 ]
+"602
+[v _LATA5 `VNb  1 e 0 @31821 ]
+"616
+[v _RD0 `VNb  1 e 0 @31768 ]
+"627
+[v _RC0 `VNb  1 e 0 @31760 ]
+"628
+[v _RC1 `VNb  1 e 0 @31761 ]
+"653
+[v _RA6 `VNb  1 e 0 @31750 ]
+"654
+[v _RA7 `VNb  1 e 0 @31751 ]
+"4 lcd.c
+[v _DATA `ui  1 e 2 @144 ]
+"5
+[v _lcdl1flag `ui  1 e 2 @162 ]
+"6
+[v _keytmr `uc  1 e 1 @167 ]
+"89 MAIN.h
+[v _Lcd_L1 `DC[17]uc  1 e 17 0 ]
+"90
+[v _Lcd_L2 `DC[17]uc  1 e 17 0 ]
+"91
+[v _Lcd_L3 `DC[17]uc  1 e 17 0 ]
+"92
+[v _Lcd_L4 `DC[17]uc  1 e 17 0 ]
+"94
+[v _Lcd_LINE1 `[16]uc  1 e 16 @146 ]
+"95
+[v _Lcd_LINE2 `[16]uc  1 e 16 @128 ]
+"97
+[v _i2c_rx_buff `[8]uc  1 e 8 @176 ]
+"98
+[v _i2c_tx_buff `[8]uc  1 e 8 @168 ]
+"99
+[v _data `[128]uc  1 e 128 @0 ]
+"101
+[v _pattern0 `[8]uc  1 e 8 @305 ]
+"102
+[v _pattern1 `[8]uc  1 e 8 @313 ]
+"103
+[v _pattern2 `[8]uc  1 e 8 @321 ]
+"104
+[v _pattern3 `[8]uc  1 e 8 @329 ]
+"105
+[v _pattern4 `[8]uc  1 e 8 @337 ]
+"106
+[v _pattern5 `[8]uc  1 e 8 @345 ]
+"107
+[v _pattern6 `[8]uc  1 e 8 @353 ]
+"108
+[v _pattern7 `[8]uc  1 e 8 @361 ]
+"110
+[v _cur_gain `f  1 e 3 @186 ]
+"111
+[v _gainarr `[36]f  1 e 108 @189 ]
+"121
+[v _ADC_Count `ui  1 e 2 @184 ]
+"122
+[v _FFT_ready_flag `uc  1 e 1 @164 ]
+"123
+[v _dutyvolt `uc  1 e 1 @165 ]
+[v _dutycurrent `uc  1 e 1 @166 ]
+"44 Uart.c
+[v F1805 `[8]uc  1 s 8 @297 ]
+"39 main.c
+[v _main `(v  1 e 0 0 ]
+{
+"103
+} 0
+"4 Pwm.c
+[v _Init_PWM `(v  1 e 0 0 ]
+{
+"13
+} 0
+"21 main.c
+[v _Init_stat_isr `(v  1 e 0 0 ]
+{
+"25
+} 0
+"100 i2c.c
+[v _Init_i2c `(v  1 e 0 0 ]
+{
+"112
+} 0
+"16 Pwm.c
+[v _Set_PWM_Duty `(v  1 e 0 0 ]
+{
+"19
+} 0
+"9 Mill_Calc.c
+[v _Disp_Mill_fill `(v  1 e 0 0 ]
+{
+"11
+} 0
+"4
+[v _Calc_percentageFull `(v  1 e 0 0 ]
+{
+"6
+} 0
+"74 i2c.c
+[v _Read_FFT `(uc  1 e 1 0 ]
+{
+"75
+[v _i `uc  1 a 1 0 ]
+"74
+[v _idx_addr `ui  1 p 2 0 ]
+[v _no_readings `uc  1 p 1 2 ]
+"88
+} 1
+"4 Adc.c
+[v _Adc_init `(v  1 e 0 0 ]
+{
+"14
+} 0
+"234 lcd.c
+[v _Initcustom_char `(v  1 e 0 0 ]
+{
+"244
+} 0
+"141
+[v _lcd_init `(v  1 e 0 0 ]
+{
+"165
+} 0
+"4 Uart.c
+[v _USARTinit `(v  1 e 0 0 ]
+{
+"20
+} 0
+"66 i2c.c
+[v _i2c_read `(uc  1 e 1 0 ]
+{
+"71
+} 0
+"50
+[v _i2c_write `(v  1 e 0 0 ]
+{
+[v _data `uc  1 p 1 0 ]
+"56
+} 0
+"37
+[v _i2c_stop `(v  1 e 0 0 ]
+{
+"40
+} 0
+"59
+[v _i2c_master_ack `(v  1 e 0 0 ]
+{
+[v _ack_type `uc  1 p 1 0 ]
+"63
+} 0
+"5 C:\Program Files\HI-TECH Software\PICC-18\PRO\9.65\sources\awdiv.c
+[v ___awdiv `(i  1 e 2 0 ]
+{
+"7
+[v _counter `uc  1 a 1 0 ]
+[v _sign `uc  1 a 1 1 ]
+"6
+[v _quotient `i  1 a 2 2 ]
+"5
+[v _dividend `i  1 p 2 0 ]
+[v _divisor `i  1 p 2 2 ]
+"37
+} 4
+"223 lcd.c
+[v _LCD_build `(v  1 e 0 0 ]
+{
+"224
+[v _i `uc  1 a 1 0 ]
+"223
+[v _location `uc  1 p 1 0 ]
+[v _ptr `*.buc  1 p 2 1 ]
+"231
+} 1
+"22 i2c.c
+[v _i2c_start `(v  1 e 0 0 ]
+{
+[v _stype `uc  1 p 1 0 ]
+"34
+} 0
+"17
+[v _i2c_idle `(v  1 e 0 0 ]
+{
+"19
+} 0
+"85 lcd.c
+[v _lcd_data `(v  1 e 0 0 ]
+{
+[v _data `uc  1 p 1 0 ]
+"104
+} 0
+"63
+[v _lcd_command `(v  1 e 0 0 ]
+{
+[v _cmd `uc  1 p 1 0 ]
+"82
+} 0
+"11
+[v _DelayMs `(v  1 e 0 0 ]
+{
+"12
+[v _delay_cnst `ui  1 a 2 0 ]
+"11
+[v _Ms `ui  1 p 2 0 ]
+"19
+} 2
+"106 main.c
+[v _isr `I(v  1 e 0 0 ]
+{
+"129
+} 0
